@@ -1,0 +1,9 @@
+# DogeHouse Snap Downloads API Docs
+
+Welcome to the API docs in plain-text! Currently, we're working on on the server-side stuff,
+CI stuff and the JSON format for the 'src/build/*' files. Come back when we're done.
+
+## Where to contribute
+
+We're on GitHub at https://github.com.MadeByThePinsHub/dogehouse-snap-reproduicible-builds-api
+and on Launchpad at https://launchpad.net/dogehouse-snap-reproduicible-builds-api
