@@ -1,0 +1,10 @@
+{
+  "name": "@madebythepinshub/dogehouse-snap-dl-api",
+  "version": "0.1.0",
+  "description": "API server for managing mega.nz links to the DogeHouse snap builds by The Pins Team.",
+  "main": "server.js",
+  "repository": "git@github.com:MadeByThePinsHub/dogehouse-snap-reproduicible-builds-api.git",
+  "author": "Andrei Jiroh Eugenio Halili <andreijiroh@madebythepins.tk>",
+  "license": "MIT",
+  "private": true
+}
