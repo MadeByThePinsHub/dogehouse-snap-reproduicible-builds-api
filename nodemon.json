@@ -1,4 +1,7 @@
 {
-    "watch": ["src/builds"],
+    "watch": [
+        "src",
+        "server.js"
+    ],
     "delay": "3"
 }
