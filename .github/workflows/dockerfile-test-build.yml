@@ -1,0 +1,9 @@
+name: "Dockerfile CI"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run test builds
+        run: docker build . -t madebythepinshub/dogehouse-snap-dl-api
