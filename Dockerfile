@@ -6,7 +6,7 @@ RUN npm install -g yarn --force
 
 ## Setup our workspace
 WORKDIR /app
-COPY package.json yarn.lock .yarn/ /app
+COPY package.json yarn.lock .yarn/ /app/
 
 # Install deps
 RUN yarn install
