@@ -6,7 +6,10 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "lint": "echo 'work-in-progress flag is raised!' && exit 1"
+    "lint-check": "prettier --check server.js",
+    "lint-ci": "prettier server.js",
+    "lint-format": "prettier --write server.js",
+    "lint": "yarn run lint-check && yarn run lint-ci && yarn run lint-format"
   },
   "repository": "https://MadeByThePinsHub/dogehouse-snap-reproduicible-builds-api.git",
   "author": "Andrei Jiroh Eugenio Halili <andreijiroh@madebythepins.tk>",
