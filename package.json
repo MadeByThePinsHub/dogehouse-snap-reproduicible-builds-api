@@ -14,10 +14,10 @@
   "private": true,
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "prettier": "^2.2.1"
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
   }
 }
