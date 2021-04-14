@@ -2,7 +2,7 @@
 FROM node:14
 
 ## Install Yarn
-RUN npm install -g yarn
+RUN npm install -g yarn --force
 
 ## Setup our workspace
 WORKDIR /app
