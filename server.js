@@ -44,12 +44,12 @@ app.get("/install", (req, res) => {
 //const latestVersion = require('./src/builds/latest.json');
 //const availableBuilds = require('./src/builds');
 
-app.get("/api/dl/latest", (req, res) => {
+app.get("/api/v1/dl/latest", (req, res) => {
   res
     .status(404)
     .json({ okay: false, error: "Download link not available", code: 404 });
 });
-app.get("/api/versions", (req, res) => {
+app.get("/api/v1/versions", (req, res) => {
   res.status(200).json({
     ok: true,
     data: { latest: "latestVersion", availableBuilds: "availableBuilds" },
@@ -58,7 +58,7 @@ app.get("/api/versions", (req, res) => {
 
 // debug tools to help us
 // TODO: Make them available on devmode.
-app.get("/api/debug", (req, res) => {
+app.get("/api/v1/debug", (req, res) => {
   if (process.env.NODE_ENV == "development") {
     console.log(req);
     res.status(200).send("Request sent to server logs.");
@@ -70,7 +70,7 @@ app.get("/api/debug", (req, res) => {
     });
   }
 });
-app.post("/api/debug", (req, res) => {
+app.post("/api/v1/debug", (req, res) => {
   if (process.env.NODE_ENV == "development") {
     console.log(req);
     res.status(200).send("Request sent to server logs.");
@@ -82,7 +82,7 @@ app.post("/api/debug", (req, res) => {
     });
   }
 });
-app.delete("/api/debug", (req, res) => {
+app.delete("/api/v1/debug", (req, res) => {
   if (process.env.NODE_ENV == "development") {
     console.clear();
     res.status(201).send("Successfully cleared");
@@ -94,7 +94,8 @@ app.delete("/api/debug", (req, res) => {
     });
   }
 });
-// handle errors here
+
+// handle 404 errors here
 app.use(function (req, res, next) {
   res.status(404).json({
     ok: false,
