@@ -1,4 +1,4 @@
 [submodule "dogehouse"]
 	path = src/dogehouse
-	url = https://git.launchpad.net/benawad-dogehouse
+	url = https://github.com/benawad/dogehouse
 	branch = staging
